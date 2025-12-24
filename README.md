@@ -9,6 +9,7 @@ A Laravel template with **MySQL database** and **Laravel Queues** support. This 
 | MySQL 8.0 Database | ✅ |
 | Laravel Queues (database driver) | ✅ |
 | Queue Worker Container | ✅ |
+| Task Scheduling Container | ✅ |
 | Traefik Reverse Proxy | ✅ |
 | Zero-Downtime Deployments | ✅ |
 | Automated SSL (Let's Encrypt) | ✅ |
@@ -20,7 +21,6 @@ A Laravel template with **MySQL database** and **Laravel Queues** support. This 
 - Redis
 - Laravel Horizon
 - Laravel Reverb
-- Task Scheduling container
 - GitHub Actions CI/CD (pre-configured)
 - Local HTTPS/SSL (trusted certs)
 - PostgreSQL/MariaDB options
@@ -55,6 +55,7 @@ When you run `spin up`, the following containers will start:
 | php | - | Laravel application (via Traefik) |
 | mysql | 3306 | MySQL 8.0 database |
 | queue | - | Queue worker (php artisan queue:work) |
+| scheduler | - | Task scheduler (php artisan schedule:work) |
 | traefik | 80, 443 | Reverse proxy |
 | node | - | Node.js for asset compilation |
 | mailpit | 8025 | Email testing UI |
