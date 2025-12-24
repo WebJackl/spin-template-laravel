@@ -1,6 +1,6 @@
 # Spin Template - Laravel Lite 🚀
 
-A Laravel template with **MySQL database** and **Laravel Queues** support. This template sits between the basic free template and the Pro template, offering essential production features without the full Pro feature set.
+A Laravel template with **MySQL database**, **Laravel Queues** and **Scheduler** support. This template sits between the basic free template and the Pro template, offering essential production features without the full Pro feature set.
 
 ## Features
 
@@ -32,7 +32,7 @@ Make sure you have Spin installed: https://serversideup.net/open-source/spin/doc
 
 ### Create a new project
 ```bash
-spin new jigar-dhulla/spin-laravel-lite-template my-project
+spin new webjackl/spin-template-laravel my-project
 ```
 
 ### Run the project
@@ -79,12 +79,6 @@ Queues use the database driver by default:
 
 ```env
 QUEUE_CONNECTION=database
-```
-
-To create the jobs table:
-```bash
-spin exec php artisan queue:table
-spin exec php artisan migrate
 ```
 
 ## Production Deployment
